@@ -2,24 +2,10 @@
   "student": [
     {
       "id": 1,
-      "Name": "mounika",
+      "Name": "mokhitha",
       "age": "30",
       "standard": "PG",
       "gender": "Female"
-    },
-    {
-      "id": 2,
-      "Name": "Mokshitha",
-      "age": "3",
-      "standard": "UKG",
-      "gender": "Female"
-    },
-    {
-      "id": 3,
-      "Name": "RithikSai",
-      "age": "1",
-      "standard": "kid",
-      "gender": "Male"
     }
   ]
 }

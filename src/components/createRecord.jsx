@@ -92,8 +92,9 @@ class CreateRecord extends Component {
   render() {
     //    let [id,Name,age,standard] = this.state;
     return (
-      <div>
-        <h2 className="text-success">ADD NEW STUDENT</h2>
+      <div className="mt-80">
+        <div className="form_data text-web-center b-1">
+        <h2 className="text-white">ADD NEW STUDENT</h2>
         <form
           name="f"
           className="form-group"
@@ -120,6 +121,7 @@ class CreateRecord extends Component {
             value={this.state.Name}
             placeholder="NAME"
             required
+            autoComplete="off"
           />
           <br />
           <br />
@@ -131,6 +133,7 @@ class CreateRecord extends Component {
             }}
             value={this.state.age}
             placeholder="AGE"
+            autoComplete="off"
           />
           <br />
           <br />
@@ -143,6 +146,7 @@ class CreateRecord extends Component {
             value={this.state.standard}
             placeholder="STANDARD"
             required
+            autoComplete="off"
           />
           <br />
           <br />
@@ -154,7 +158,9 @@ class CreateRecord extends Component {
             }}
             value="Male"
             checked={this.state.gender === "Male" ? true : false}
+            style={this.state.gender === "Male"?{height:'15px',width:'15px'}:{}}
             required
+           
           />
           &nbsp;Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <input
@@ -166,13 +172,14 @@ class CreateRecord extends Component {
             value="Female"
             required
             checked={this.state.gender === "Female" ? true : false}
+            style={this.state.gender === "Female"?{height:'15px',width:'15px'}:{}}
           />
           &nbsp;Female
           <br />
           <br />
           <input type="submit" className="btn btn-success" value="Submit" />
         </form>
-
+        </div>
         <div className="text-web-center">
           <table className="b-1">
             <thead>

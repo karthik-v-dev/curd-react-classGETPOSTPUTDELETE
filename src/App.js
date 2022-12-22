@@ -7,7 +7,7 @@ import {Routes,Route,Link} from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-       <nav>
+       <nav className='p-fixed text-web-center'>
         <Link to='/'>ADD NEW STUDENT</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <Link to='/studentDB'>Student Database</Link>
       
